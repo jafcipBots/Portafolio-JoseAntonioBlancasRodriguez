@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba(62, 62, 64, 0.541);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    border-left: 3px solid goldenrod;
+    background-color: rgb(169, 4, 169);
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #050013;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#specialbackground{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+#specialbackground::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(195, 134, 251);
+    transform: scale(0.1);
+    box-shadow: 0 0 10px rgb(195, 134, 251),
+                0 0 20px rgb(195, 134, 251),
+                0 0 40px rgb(195, 134, 251);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 2s;
+}
+#specialbackground:hover::before{
+    transform: scale(1);
+    transition: 0s;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#targetas{
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    border:2px solid rgb(195, 134, 251);
+}
+
+#targeta-head{
+    text-align: center;
+    border-bottom: 2px solid rgb(195, 134, 251);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#span-flecha{
+    color: rgb(211, 163, 255);
+}
