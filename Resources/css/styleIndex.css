@@ -2,6 +2,7 @@ body {
     margin: 0;
     color:white;
     font-family: "Lato", sans-serif;
+    background-color: black;
 }
 
 .sidebar {
@@ -33,15 +34,10 @@ div.content {
     margin-left: 20%;
     margin-right: -14%;
 }
-
 #content2 {
     width: 100%;
     height: 100%;
     margin-left: 75%;
-}
-
-body {
-    background-color: black;
 }
 
 @media screen and (max-width: 700px) {
@@ -53,6 +49,12 @@ body {
 
     .sidebar #side {
         float: left;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 }
 
@@ -103,29 +105,6 @@ body {
 
 #span-flecha{
     color: rgb(211, 163, 255);
-}
-
-#targetaPremium{
-    border-radius: 20px;
-    height: 100%;
-    width: 90%;
-    margin-left: 1%;
-    margin-top: 1%;
-    border: 1px solid rgb(253, 255, 141);
-}
-
-#targetaPremium-head{
-    text-align: center;
-    border-bottom: 1px solid rgb(253, 255, 141);
-    border-radius: 20px 20px 0px 0px;
-}
-
-.contacticon {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-top: 3%;
 }
 
 .wrapper{
